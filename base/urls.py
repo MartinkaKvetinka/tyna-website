@@ -18,8 +18,6 @@ urlpatterns = [
     path('workshops/', views.workshops, name="workshops"),
     # /timetable
     path('timetable/', views.timetable, name="timetable"),
-    # /inspiration
-    path('inspiration/', views.inspiration, name="inspiration"),
     # /contact
     path('contact/', views.contact, name="contact"),
 ]

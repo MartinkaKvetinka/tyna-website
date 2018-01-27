@@ -37,7 +37,7 @@
                         {% url 'base:babysitting' as babysitting %}
                         {% url 'base:workshops' as workshops %}
                         {% url 'base:timetable' as timetable %}
-                        {% url 'base:inspiration' as inspiration %}
+                        {% url 'inspiration:index' as inspiration %}
                         {% url 'base:contact' as contact %}
                         <li {% if request.path == index %}class="active"{% endif %}>
                             <a href="{{ index }}">Domů</a>

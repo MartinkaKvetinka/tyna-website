@@ -1,4 +1,3 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 from .models import Content
 
@@ -45,10 +44,6 @@ def workshops(request):
 
 def timetable(request):
     return render(request, 'base/timetable.html')
-
-
-def inspiration(request):
-    return render(request, 'base/inspiration.html')
 
 
 def contact(request):

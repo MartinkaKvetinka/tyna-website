@@ -1,0 +1,15 @@
+{% extends 'base/base.html' %}
+
+{% block title %} Inspirace {% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <ul>
+            {% for post in object_list%}
+                <li><a href="{% url 'inspiration:detail' post.id %}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+{% endblock %}
